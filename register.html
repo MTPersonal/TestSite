@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register Page</title>
+
+    <!-- import favicon icon -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <!-- import the css initialization file -->
+    <link rel="stylesheet" href="css/base.css">
+    
+    <!-- import the css style file for the registration page -->
+    <link rel="stylesheet" href="css/register.css">
+
+</head>
+
+<body>
+    <!-- video 12-21: registration page - header -->
+    <div class="w">
+        <header>
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="logo.png"></a>
+            </div>
+        </header>
+
+        <div class="registerarea">
+            <h3>
+                Register as new user
+                <div class="login">Already has account? <a href="#">Login</a></div>
+            </h3>
+
+            <!-- video 12-23, 24: register main body -->
+            <div class="reg_form">
+                <!-- IMPORTANT: need to use a form region to include all the form elements -->
+                <form action="">
+                    <ul>
+                        <li><label for="">Phone</label> <input type="text" class="inp"> <span class="error"> <i class="error_icon"></i> Incorrect phone number, please enter again.</span></li>
+                        <li><label for="">SMS code</label> <input type="text" class="inp"> <span class="success"> <i class="success_icon"></i> SMS verification is correct.</span></li>
+                        <li><label for="">Password</label> <input type="password" class="inp"> <span class="error"> <i class="error_icon"></i> Incorrect password format.</span></li>
+    
+                        <!-- video 12-25: password safety level block -->
+                        <li class="safety">Safety level <em class="weak">Weak</em> <em class="moderate">Med</em> <em class="intense">Strong</em> </li>
+    
+                        <li><label for="">Comfirm Password</label> <input type="password" class="inp"> <span class="error"> <i class="error_icon"></i> Incorrect password format.</span></li>
+    
+                        <!-- video 12-26: agreement and registration confirm block -->
+                        <li class="agree"> <input type="checkbox"> Agree registration terms <a href="#"> User Agreement </a> </li>
+    
+                        <li><input style="cursor: pointer;" type="submit" value="Register" class="btn"></li>
+                    </ul>
+                </form>
+            </div>
+
+        </div>
+
+        <footer>
+            <!-- video 11-29: mod_copyright -->
+            <div class="mod_copyright">
+                <div class="links">
+                    <a href="#">关于我们</a>   | <a href="#">联系我们</a>   | <a href="#">联系客服</a>   | <a href="#">商家入驻</a>   | <a href="#">营销中心</a>   | <a href="#">手机品优购</a>   | <a href="#">友情链接</a>   | <a href="#">销售联盟</a>   | <a href="">品优购社区</a>   |  <a href="#">品优购公益</a>  | <a href="#">English Site</a>   | <a href="#">Contact U</a> 
+                </div>
+                <div class="copyright">
+                    Address：This website
+                    <br>
+                    This website is written by MT line-by-line, so it might not be bug free or compatible to all broswers. <br>
+                    If there is any bugs or compatibility issues, I will highly appreciate if you can contact me and let me know. <br>
+                    Thank you for your help and interest.                  
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>

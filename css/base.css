@@ -1,0 +1,78 @@
+/* Empty all the internal and external margins */
+*{
+    margin:0;
+    padding:0;
+    /* css3 box model */
+    box-sizing: border-box;
+}
+
+/* Remove Italic fonts */
+em,
+i{
+    font-style:normal
+}
+
+/* Remove dot in front of li */
+li{
+    list-style:none
+}
+
+img{
+    /* border 0 to compatible with lower version broswer */
+    border:0;
+    /* remove the white gap below an image */
+    vertical-align:middle
+}
+
+button{
+    /* change the cursor shape to a hand shape when the cursor goes over button */
+    cursor:pointer
+}
+
+a{
+    color:#666;
+    text-decoration:none
+}
+
+a:hover{
+    color:#c81623
+}
+
+button,
+input{
+    /* "\5B8B\4F53" = 宋体 for better compatibility for broswers */
+    font-family:Microsoft YaHei,Heiti SC,tahoma,arial,Hiragino Sans GB,"\5B8B\4F53",sans-serif;
+
+    /* video 11-15: search block 品优购 */
+    /* There is gray box border by default, need to remove it manually */
+    border: 0;
+    outline: none;
+}
+
+
+body{
+    /* CSS3 attribute, let text to be more clear */
+    -webkit-font-smoothing:antialiased;
+    background-color:#fff;
+    font:12px/1.5 Microsoft YaHei,Heiti SC,tahoma,arial,Hiragino Sans GB,"\5B8B\4F53",sans-serif;
+    color:#666
+}
+
+
+.hide,.none{
+    display:none
+}
+
+
+/* clear floating */
+.clearfix:after{
+    visibility:hidden;
+    clear:both;
+    display:block;
+    content:".";
+    height:0
+}
+
+.clearfix{
+    *zoom:1
+}
